@@ -4,13 +4,12 @@ import { getFirestore, doc, getDoc, setDoc, query, collection, where, getDocs } 
 
 // Configuración de Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyDlM780rZobiK0yxtXyatAqk1bv3rzmtN4",
-    authDomain: "registro-454ad.firebaseapp.com",
-    projectId: "registro-454ad",
-    storageBucket: "registro-454ad.firebasestorage.app",
-    messagingSenderId: "258742230950",
-    appId: "1:258742230950:web:fc9d9d912d18c46062f967",
-    measurementId: "G-5VDD134V42"
+  apiKey: "AIzaSyDlM780rZobiK0yxtXyatAqk1bv3rzmtN4",
+  authDomain: "registro-454ad.firebaseapp.com",
+  projectId: "registro-454ad",
+  storageBucket: "registro-454ad.firebasestorage.app",
+  messagingSenderId: "258742230950",
+  appId: "1:258742230950:web:fc9d9d912d18c46062f967"
 };
 
 const app = initializeApp(firebaseConfig);
