@@ -3,13 +3,15 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebas
 import { getFirestore, doc, getDoc, setDoc, query, collection, where, getDocs } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
 
 // Configuración de Firebase
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyDlM780rZobiK0yxtXyatAqk1bv3rzmtN4",
   authDomain: "registro-454ad.firebaseapp.com",
   projectId: "registro-454ad",
   storageBucket: "registro-454ad.firebasestorage.app",
   messagingSenderId: "258742230950",
-  appId: "1:258742230950:web:fc9d9d912d18c46062f967"
+  appId: "1:258742230950:web:fc9d9d912d18c46062f967",
+  measurementId: "G-5VDD134V42"
 };
 
 const app = initializeApp(firebaseConfig);
