@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Boletos con Firebase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Boletos</h1>
+        <form id="ticketForm">
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" required>
+
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno" required>
+
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno" required>
+
+            <label for="numeroBoleto">Número de Boleto (00001-50000):</label>
+            <input type="number" id="numeroBoleto" min="1" max="50000" required>
+
+            <button type="button" id="verificarBoleto">Verificar Boleto</button>
+            <button type="submit">Registrar</button>
+        </form>
+        <p id="mensaje" class="mensaje"></p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
