@@ -1,3 +1,15 @@
+async function pruebaFirestore() {
+    try {
+        const pruebaRef = doc(db, "pruebas", "testDoc");
+        await setDoc(pruebaRef, { mensaje: "Prueba exitosa" });
+        console.log("Firestore conectado y datos escritos con éxito.");
+    } catch (error) {
+        console.error("Error al conectar con Firestore:", error);
+    }
+}
+
+pruebaFirestore();
+
 // Importar Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
 import { getFirestore, doc, getDoc, setDoc, query, collection, where, getDocs } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
